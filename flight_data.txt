@@ -1,0 +1,41 @@
+
+Perform the following tasks to train a regression model:
+
+- Task 1: Return to the Azure Machine Learning experiment you created in Part 1.
+
+- Task 2: Add a Select Columns in Dataset module, and use it to select only the Month, DayofMonth,
+DayOfWeek, Carrier, OriginAirportID, DestAirportID, CRSDepTime, DepDelay,
+CRSArrTime, and ArrDelay columns.
+
+- Task 3: Add an Edit Metadata module and use it to make the OriginAirportID,
+DestAirportID, and Carrier columns Categorical.
+
+- Task 4: Add a Normalize Data module and use it to standardize the CRSDepTime,
+CRSArrTime, and DepDelay columns using the ZScoretransformation method.
+
+- Task 5: Add a Split Data module and use it to split the rows into 70% / 30% subsets. Use a random
+seed value of 0.
+
+- Task 6: Add a Boosted Decision Tree Regression module and a Train Model module. Then use the
+default settings to train the model with the 70% data split to predict the ArrDelay label column.
+
+- Task 7: Add a Score Model module, and use it to score the trained model using the 30% split of data.
+
+- Task 8: Add an Evaluate Model module and use it to evaluate the results from the Score
+Model module.
+
+
+Year,Month,DayofMonth,DayOfWeek,Carrier,OriginAirportID,DestAirportID,CRSDepTime,DepDelay,DepDel15,CRSArrTime,ArrDelay,ArrDel15,Cancelled
+2013,4,19,5,DL,11433,13303,837,-3,0,1138,1,0,0
+2013,4,19,5,DL,11433,13303,837,1,0,1238,1,0,0
+2013,4,19,5,DL,11433,13303,837,2,0,1128,1,0,0
+
+
+Year,Month,DayofMonth,DayOfWeek,Carrier,OriginAirportID,DestAirportID,CRSDepTime,DepDelay,DepDel15,CRSArrTime,ArrDelay,ArrDel15,Cancelled
+
+
+
+
+
+
+
